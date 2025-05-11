@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoastSmart</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoastSmart - Your Smart Property Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to CoastSmart</h1>
-    <p>Book your beachfront property in Mombasa with ease.</p>
-    <button onclick="bookNow()">Book Now</button>
-  </header>
+    <header>
+        <h1>Welcome to CoastSmart</h1>
+        <p>Your smart way to book properties and pay securely in Mombasa County</p>
+    </header>
 
-  <main>
-    <section class="property">
-      <img src="https://via.placeholder.com/600x300" alt="Villa view" />
-      <h2>Nyali Beach Villa</h2>
-      <p>Modern 4-bedroom villa with private beach access.</p>
+    <section id="property-listings">
+        <h2>Available Properties</h2>
+        <div class="property">
+            <h3>Oceanfront Villa</h3>
+            <p><strong>Price:</strong> KSh 300,000 per month</p>
+            <p><strong>Location:</strong> Mombasa, Diani Beach</p>
+            <p><strong>Details:</strong> 4 bedrooms, sea view, private pool</p>
+            <button onclick="bookProperty('Oceanfront Villa')">Book Now</button>
+        </div>
+        <div class="property">
+            <h3>City Center Apartment</h3>
+            <p><strong>Price:</strong> KSh 120,000 per month</p>
+            <p><strong>Location:</strong> Mombasa CBD</p>
+            <p><strong>Details:</strong> 2 bedrooms, modern design, high security</p>
+            <button onclick="bookProperty('City Center Apartment')">Book Now</button>
+        </div>
+        <div class="property">
+            <h3>Luxury Beach Resort</h3>
+            <p><strong>Price:</strong> KSh 500,000 per night</p>
+            <p><strong>Location:</strong> Mombasa, Nyali</p>
+            <p><strong>Details:</strong> 5-star resort, all-inclusive, beachfront</p>
+            <button onclick="bookProperty('Luxury Beach Resort')">Book Now</button>
+        </div>
     </section>
-  </main>
 
-  <script src="script.js"></script>
+    <section id="payment-options">
+        <h2>Payment Options</h2>
+        <p>We offer a variety of payment methods for your convenience:</p>
+        <ul>
+            <li><strong>MPesa:</strong> Pay directly via MPesa using our business number: <strong>123456</strong></li>
+            <li><strong>Bank Transfer:</strong> Account Name: CoastSmart Ltd. | Bank: ABC Bank | Account No: 1234567890</li>
+            <li><strong>Credit/Debit Cards:</strong> Visa, MasterCard, and others supported</li>
+        </ul>
+    </section>
+
+    <section id="social-media">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/coastsmart" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/coastsmart" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/coastsmart" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/coastsmart" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CoastSmart. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 

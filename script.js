@@ -4,3 +4,6 @@ function bookNow() {
     alert("Thank you " + name + "! Your booking is confirmed.");
   }
 }
+function bookProperty(propertyName) {
+    alert("Thank you for booking the " + propertyName + "! Our team will contact you shortly.");
+}
